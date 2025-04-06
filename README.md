@@ -1,16 +1,36 @@
-# only_clicker
+# 🚀 Hacker Clicker
 
-A new Flutter project.
+**Reading is not required!!!**  
+But if you're here — welcome! Here's everything you need to know.
 
-## Getting Started
+Hacker Clicker is a **small alternative to Cookie Clicker**, built using the **Flutter** framework and designed specifically for **Android** devices.
 
-This project is a starting point for a Flutter application.
+All code in this project is **public domain** — no copyright, no licenses.  
+✅ Use it for **any purpose**, however you like!
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 🔧 How to Use
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Follow these steps to get started:
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/KholmatovDev/hacker_clicker.git
+2. **Install packages**
+  ```bash
+  flutter pub get
+```
+3. **Run**
+
+
+⭐ Don't Forget
+
+If you like the project,
+leave a star on GitHub — it helps a lot!
+
+📲 Contact
+
+    Telegram: t.me/@xrcoder
+
+    YouTube: youtube.com/@xrcoder
