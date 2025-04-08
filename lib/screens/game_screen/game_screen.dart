@@ -21,17 +21,44 @@ class _GameScreenState extends State<GameScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.backColor,
-      appBar: AppBar(
-        title: Text(
-          "$count kb",
-          style: TextStyle(color: AppColors.white, fontWeight: FontWeight.bold),
-        ),
-        backgroundColor: AppColors.backColor,
-        actions: [Container(width: 100, height: 100)],
-      ),
+
       body: SafeArea(
         child: Column(
           children: [
+            MediaQuery.removePadding(
+              context: context,
+              removeBottom: true,
+              removeLeft: true,
+              removeRight: true,
+              child: SizedBox(
+                child: Row(
+                  children: [
+                    Text(
+                      "$count kb",
+                      style: TextStyle(
+                        color: AppColors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 25
+                      ),
+                    ),
+                    Spacer(),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: AppColors.greenLight,
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      padding: EdgeInsets.all(5),
+                      margin: EdgeInsets.only(left: 20),
+                      child: Icon(
+                        Icons.shopping_bag_outlined,
+                        color: AppColors.white,
+                        size: 40,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
             Container(
               height: 200,
               decoration: BoxDecoration(
@@ -42,7 +69,7 @@ class _GameScreenState extends State<GameScreen> {
               child: PaddingX(
                 ListView.builder(
                   controller: controller,
-                  itemCount: consoleElements.length,
+                  itemCount: consoleElements.length - 1,
                   itemBuilder:
                       (context, index) => Text(
                         consoleElements[index],
